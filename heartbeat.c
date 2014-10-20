@@ -33,7 +33,7 @@ MODULE_DESCRIPTION("code to print a heartbeat message to dmesg periodically");
 MODULE_AUTHOR("Michael Bosse");
 MODULE_LICENSE("GPL");
 
-static unsigned int frequency = 1;
+static unsigned int frequency = 30;
 module_param(frequency, int, 0);
 MODULE_PARM_DESC(frequency, "int: frequency of heartbeat print in dmesg");
 
